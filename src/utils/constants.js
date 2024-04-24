@@ -5,30 +5,16 @@ export const USER_AVATAR="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/K6hjPJ
 export const IMG_CDN_URL="https://image.tmdb.org/t/p/w500";
 
 export const BG_URL="https://assets.nflxext.com/ffe/siteui/vlv3/93da5c27-be66-427c-8b72-5cb39d275279/94eb5ad7-10d8-4cca-bf45-ac52e0a052c0/IN-en-20240226-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+
+
+ //export const OPENAI_KEY=process.env.REACT_APP_OPENAI_KEY;
+ export const OPENAI_KEY="sk-proj-rNi4iNv6LTHiLXzxKnCkT3BlbkFJJtqqUHtpPYmKwlt3q3Bz";
+
 export const API_OPTIONS = {
 
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlMzRkMWJjYjU2MWUxYTg3ZjAyZDY4ODkwMTUwZjE5NiIsInN1YiI6IjY2MTEyYzNmMWZhMWM4MDE0OWQxMzg3YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.we4hG21AFmhepySKIS1SyXr8nG8PMKM2pJsevgbwqKo'
+    Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
   }
 };
-
-  //   method: 'GET',
-  // headers: {
-  //   accept: 'application/json',
-  //   Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlMzRkMWJjYjU2MWUxYTg3ZjAyZDY4ODkwMTUwZjE5NiIsInN1YiI6IjY2MTEyYzNmMWZhMWM4MDE0OWQxMzg3YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.we4hG21AFmhepySKIS1SyXr8nG8PMKM2pJsevgbwqKo'
-  // }
-
-  // method: 'GET',
-	// headers: {
-	// 	'X-RapidAPI-Key': '10c0027b60msh3883c57c49dda08p1d87f2jsn60e82464fc62',
-	// 	'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
-	// }
-  // };
-
-  // eyJhbGciOiJlUzI1NiJ9.eyJhdWQiOil5Zjk2NjYzMWUxNTIzYzE4MWVlYjg2YWNkNzZiMzJkNilsInN1Yil6IjY0Y2EwZGJhYmYWOWQxMDEwMWYxODk2YilsInNj
-//b3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uljoxfQ.Y3RpHbTXBaxBgtKNokY1bssYf3BVYM746QHHmRFwjW8
-
-//eyJhbGciOiJlUzI1NiJ9.eyJhdWQiOil5Zjk2NjYzMWUxNTIzYzE4MWVlYjg2YWNkNzZiMzJkNilsInN1Yil6IjY0Y2EwZGJhYmYWOWQxMDEwMWYxODk2YilsInNj
-//b3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uljoxfQ.Y3RpHbTXBaxBgtKNokY1bssYf3BVYM746QHHmRFwjW8

@@ -1,27 +1,3 @@
-// import React, { useEffect } from 'react'
-// import { API_OPTIONS } from '../utils/constants';
-
-// const VideoBackground = ({movieId}) => {
-//     const getMovieVideos=async()=>{
-//         const data=await fetch('https://netflix54.p.rapidapi.com/title/trailers/?id=80057281&offset=0&limit=25&lang=en', API_OPTIONS);
-//         const json=await data.json();
-//         const result=json;
-//         const trailer=result[0].details;
-//         console.log(json);
-//         console.log(trailer);
-
-//     }
-
-//     useEffect(()=>{
-//         getMovieVideos();
-//     })
-//   return (
-//     <div>VideoBackground</div>
-//   )
-// }
-
-// export default VideoBackground
-
 
 import { useSelector } from "react-redux";
 import useMovieTrailer from "../hooks/useMovieTrailer";
@@ -43,7 +19,7 @@ const VideoBackground = ({ movieId }) => {
         className="w-screen aspect-video"
         
         src={"https://www.youtube.com/embed/"+trailerVideo?.key+"?&autoplay=1&mute=1"}
-        title="Dune: Part Two | Official Trailer 3"
+        title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         //referrerPolicy="strict-origin-when-cross-origin"
       ></iframe>

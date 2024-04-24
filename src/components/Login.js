@@ -101,10 +101,11 @@ const Login = () => {
       <div className="absolute">
         <img
           src={BG_URL}
+          className="h-screen w-full object-cover md:h-full"
           alt="background image"
         />
       </div>
-      <div className="w-4/12 p-12 bg-black text-white absolute my-36 mx-auto right-0 left-0 rounded-xl bg-opacity-80">
+      <div className="w-full md:w-4/12 p-12 bg-black text-white absolute my-36 mx-auto right-0 left-0 rounded-xl bg-opacity-80">
         <form
           onSubmit={(e) => {
             e.preventDefault();
