@@ -98,10 +98,11 @@ const Login = () => {
   return (
     <div>
       <Header />
-      <div className="absolute">
+      <div className="absolute ">
         <img
           src={BG_URL}
-          className="h-screen w-full object-cover md:h-full"
+          className="min-h-screen object-cover md:h-full"
+          
           alt="background image"
         />
       </div>
@@ -144,17 +145,17 @@ const Login = () => {
             {isSignInForm ? "Sign In" : "Sign Up"}
           </button>
 
-          <div className="flex justify-between">
+          {/* <div className="flex justify-between">
             <div className="flex">
               <input type="checkbox" />
               <div>Remember me</div>
             </div>
             <div>Need help?</div>
-          </div>
+          </div> */}
         </form>
 
         <div
-          className="py-8 cursor-pointer font-semibold"
+          className="py-5 cursor-pointer font-semibold"
           onClick={toggleSignInForm}
         >
           {isSignInForm
@@ -163,6 +164,8 @@ const Login = () => {
         </div>
       </div>
     </div>
+
+    
   );
 };
 
